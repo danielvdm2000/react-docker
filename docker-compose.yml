@@ -1,0 +1,10 @@
+version: '3.6'
+
+services:
+    web:
+        image: web-prod
+        build:
+            context: ./web
+            dockerfile: Dockerfile
+        ports:
+            - '80:3000'
